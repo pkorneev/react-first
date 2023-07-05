@@ -1,14 +1,6 @@
 import React, { useState, ChangeEvent, FormEvent  } from 'react';
 
 function Navbar(){
-    const [searchInput, setSearchInput] = useState('');
-    const handleSearchSubmit = (e: FormEvent<HTMLFormElement>): void => {
-        e.preventDefault();
-        console.log('Search Input:', searchInput);
-    }
-    const handleInputChange = (e: ChangeEvent<HTMLInputElement>): void => {
-        setSearchInput(e.target.value);
-      };
     return(
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">
